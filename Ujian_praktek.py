@@ -1,5 +1,3 @@
-
-
 # 1. Input data
 nama_barang = input("Masukkan nama barang: ")
 stok = int(input("Masukkan jumlah stok awal: "))
