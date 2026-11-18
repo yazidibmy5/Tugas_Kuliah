@@ -4,7 +4,7 @@ stok = int(input("Masukkan jumlah stok awal: "))
 
 # 2. Perulangan agar transaksi bisa dilakukan berkali-kali
 while True:
-    print("\n=== MENU TRANSAKSI ===")
+    print("=== MENU TRANSAKSI ===")
     print("1. Barang Masuk")
     print("2. Barang Keluar")
     print("3. Selesai")
@@ -16,7 +16,7 @@ while True:
     if pilihan == "1":
         jumlah = int(input("Jumlah barang masuk: "))
         stok = stok + jumlah
-        print(f"Barang masuk berhasil. Stok {nama_barang} sekarang: {stok}")
+        print("Barang masuk berhasil. Stok {nama_barang} sekarang: {stok}")
 
     elif pilihan == "2":
         jumlah = int(input("Jumlah barang keluar: "))
@@ -26,16 +26,16 @@ while True:
             print("Stok Tidak Mencukupi")
         else:
             stok = stok - jumlah
-            print(f"Barang keluar berhasil. Stok {nama_barang} sekarang: {stok}")
+            print("Barang keluar berhasil. Stok {nama_barang} sekarang: {stok}")
 
     elif pilihan == "3":
-        print("\nTransaksi selesai.")
-        break
+        print("Transaksi selesai.")
+        
 
     else:
         print("Pilihan tidak valid, silakan coba lagi.")
 
 # 6. Tampilkan hasil akhir
-print("\n=== HASIL AKHIR ===")
-print(f"Nama Barang : {nama_barang}")
-print(f"Stok Akhir  : {stok}")
+print("=== HASIL AKHIR ===")
+print("Nama Barang : {nama_barang}")
+print("Stok Akhir  : {stok}")
